@@ -1,1 +1,7 @@
 # assignments
+def volume(r):
+    v=((4*3.14)*r**3)/3
+    print("volume of sphere is: ",v)
+
+radius=int(input("enter the radius of sphere"))
+volume(radius)
