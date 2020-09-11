@@ -1,1 +1,15 @@
 
+def calculate_letter(str):
+    c1=0
+    c2=0
+    for letter in str:
+        if letter.isupper():
+            c1+=1
+        elif letter.islower():
+            c2+=1
+
+    print("UPPER CASE LETTER IS : ",c1)
+    print("LOWER CASE LETTER IS : ",c2)
+print("enter a string")
+str=input()
+calculate_letter(str)
