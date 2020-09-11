@@ -1,1 +1,11 @@
 
+def check_range(a,b,x):
+    if(a<x and x<b):
+        print("yes number is within the range")
+    else:
+        print("not in range")
+
+a=int(input("enter lower value of range : "))
+b=int(input("enter higher value of range : "))
+x=int(input("enter the number for check : "))
+check_range(a,b,x)
