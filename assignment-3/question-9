@@ -1,1 +1,14 @@
 
+def count_primes(n):
+    c = 0
+    for i in range(2, n+1):
+        for j in range(2, (i//2)+1):
+            if(i % j) == 0:
+                break
+        else:
+            c += 1
+    return c
+
+
+n1 = int(input("enter the number to check numbers of prime number till that number : "))
+print("total number of prime numbers till that number is : ", count_primes(n1))
