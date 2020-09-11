@@ -1,1 +1,22 @@
 
+def sum_of_numbers(l):
+    s = sum(l)
+    if s <= 21:
+        return s
+    else:
+        if l[0] == 11 or l[1] == 11 or l[2] == 11:
+            s -= 10
+            if s <= 21:
+                return s
+            else:
+                return "BUST"
+        else:
+            return "BUST"
+
+
+print("enter 3 numbers between 1 and 11 : ")
+List = []
+for i in range(3):
+    data = int(input())
+    List.append(data)
+print(sum_of_numbers(List))
