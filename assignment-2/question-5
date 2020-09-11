@@ -1,1 +1,9 @@
 
+def multiply(list):
+    mul=1
+    for a in list:
+        mul*=a
+    print(mul)
+
+list=[2,4,2,8,6,3,4]
+multiply(list)
