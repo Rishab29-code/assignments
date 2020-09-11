@@ -1,1 +1,11 @@
 
+n = int(input("enter the number for check prime or not upto that number"))
+list = []
+for i in range(2, n+1):
+        for j in range(2, (i//2)+1):
+            if (i % j) == 0:
+                list.append(tuple([i, "nonprime"]))
+                break
+        else:
+            list.append(tuple([i, "prime"]))
+print(list)
