@@ -1,1 +1,23 @@
 
+n = int(input("enter the number to check prime or not upto that number : "))
+dic = {}
+for i in range(2, n+1):
+    for j in range(2, (i//2)+1):
+
+        if (i % j) == 0:
+            dic[i] = "nonprime"
+            break
+    else:
+        dic[i] = "prime"
+print(dic)
+c = 0
+a = []
+for i in dic:
+    if dic[i] == "nonprime":
+        a.append(i)
+        c += 1
+
+for key in a:
+    dic.pop(key)
+print(" number of Non-Prime key-value pairs are :", c)
+print("new dictionary after deleting non-prime pairs is:", dic)
